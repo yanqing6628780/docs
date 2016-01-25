@@ -43,7 +43,7 @@ $staff->update($email, $nickname, $password);
 ### 删除客服帐号
 
 ```php
-$staff->delete($email, $nickname, $password);
+$staff->delete($email);
 ```
 
 ### 设置客服帐号的头像
