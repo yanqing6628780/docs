@@ -142,7 +142,7 @@ $config = [
 ];
 
 $app = new Application($config);
-$oauth = $app->oauth;
+$oauth = $app['oauth'];
 
 // 未登录
 if (empty($_SESSION['wechat_user'])) {
@@ -174,7 +174,7 @@ $config = [
 ];
 
 $app = new Application($config);
-$oauth = $app->oauth;
+$oauth = $app['oauth'];
 
 // 获取 OAuth 授权结果用户信息
 $user = $oauth->user();
